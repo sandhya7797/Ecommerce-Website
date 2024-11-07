@@ -17,10 +17,10 @@ Each service can be tested independently, and they communicate with each other t
 
 The project is split into separate repositories for each microservice. You can explore them individually:
 
-- [**User Service**]([link-to-user-service-repo](https://github.com/sandhya7797/UserService)): Manages user authentication and authorization via OAuth 2.0.
-- [**Product Catalog Service**]([link-to-product-service-repo](https://github.com/sandhya7797/ThirdPartyAPI)): Handles product management and search functionality with ElasticSearch integration.
-- [**Payment Gateway Service**](link-to-payment-service-repo): Secure payment processing with Razorpay integration.
-- [**Email Notification Service**](link-to-notification-service-repo): Sends automated emails using Kafka upon user registration.
+- [**User Service**](https://github.com/sandhya7797/UserService): Manages user authentication and authorization via OAuth 2.0.
+- [**Product Catalog Service**](https://github.com/sandhya7797/ThirdPartyAPI): Handles product management and search functionality with ElasticSearch integration.
+- [**Payment Gateway Service**](https://github.com/sandhya7797/PaymentService): Secure payment processing with Razorpay integration.
+- [**Email Notification Service**](https://github.com/sandhya7797/EmailNotificationService): Sends automated emails using Kafka upon user registration.
 
 ## Technical Architecture
 
@@ -35,30 +35,7 @@ This platform uses a microservices-based approach to separate concerns and ensur
 
 Here’s a high-level architecture diagram to visualize how everything fits together:
 
-![Architecture Diagram](path-to-your-architecture-diagram.png)
-
-## Getting Started
-
-To get started with the platform, follow the steps below to set up each service on your local machine.
-
-1. **Clone the repositories**: Download the individual repositories (linked above) to your local machine.
-   
-2. **Set up prerequisites**: Make sure MySQL, Redis, and Kafka are installed and running locally.
-
-3. **Run the services**:
-   - Navigate to each service directory and run the following command to start the microservice:
-     ```bash
-     mvn spring-boot:run
-     ```
-   
-   - Repeat this for each microservice (User, Product, Payment, Email Notification).
-
-4. **Explore APIs**: Each service exposes a set of REST APIs. You can interact with them directly via Postman or Curl.
-
-   - **User Service**: Authentication via OAuth 2.0 (e.g., `POST /login`, `POST /register`)
-   - **Product Catalog**: `GET /products` (with filtering options)
-   - **Payment Service**: `POST /payments` (to process a payment)
-   - **Email Notification Service**: Kafka sends a welcome email after a successful user registration.
+![Architecture Diagram](#path-to-your-architecture-diagram.png)
 
 ## Testing the Platform
 
@@ -101,8 +78,4 @@ Here are a few ideas for future enhancements:
 Feel free to reach out if you’d like to discuss this project or have any questions:
 
 - [LinkedIn](https://www.linkedin.com/in/sandhya-ragulapadu-040007146/)
-- [Email](ragulapadusandhya7797@gmail.com)
-
-
-
-
+- [Email](mailto:ragulapadusandhya7797@gmail.com)
