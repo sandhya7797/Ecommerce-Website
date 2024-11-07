@@ -1,6 +1,6 @@
 # Ecommerce Website - Microservices Architecture
 
-Welcome to my Ecommerce project! This platform is built using a microservices architecture, designed to manage essential ecommerce functionalities such as product browsing, payment handling, user authentication, and notifications. Each service operates independently, which makes the platform scalable, resilient, and easy to maintain.
+Welcome to my eCommerce project! This platform is built using a microservices architecture, designed to manage essential eCommerce functionalities such as product browsing, user authentication, payment handling, and notifications. Each service operates independently, which makes the platform scalable, resilient, and easy to maintain.
 
 ## Project Overview
 
@@ -9,7 +9,7 @@ This platform is divided into several microservices, each responsible for a key 
 - **User Service**: Handles user registration, login, and authentication via OAuth 2.0.
 - **Product Catalog Service**: Manages product listings and provides efficient product search using ElasticSearch.
 - **Payment Gateway Service**: Processes secure payments using Razorpay.
-- **Notification Service**: Sends event-driven email notifications using Kafka.
+- **Email Notification Service**: Automatically sends a welcome email to users upon registration using Kafka.
 
 Each service can be tested independently, and they communicate with each other through REST APIs, Redis caching, and Kafka messaging.
 
@@ -17,10 +17,10 @@ Each service can be tested independently, and they communicate with each other t
 
 The project is split into separate repositories for each microservice. You can explore them individually:
 
-- [**User Service**](link-to-user-service-repo): Manages user authentication and authorization via OAuth 2.0.
-- [**Product Catalog Service**](link-to-product-service-repo): Handles product management and search functionality with ElasticSearch integration.
+- [**User Service**]([link-to-user-service-repo](https://github.com/sandhya7797/UserService)): Manages user authentication and authorization via OAuth 2.0.
+- [**Product Catalog Service**]([link-to-product-service-repo](https://github.com/sandhya7797/ThirdPartyAPI)): Handles product management and search functionality with ElasticSearch integration.
 - [**Payment Gateway Service**](link-to-payment-service-repo): Secure payment processing with Razorpay integration.
-- [**Notification Service**](link-to-notification-service-repo): Event-driven notification service using Kafka for communication.
+- [**Email Notification Service**](link-to-notification-service-repo): Sends automated emails using Kafka upon user registration.
 
 ## Technical Architecture
 
@@ -30,7 +30,7 @@ This platform uses a microservices-based approach to separate concerns and ensur
 - **OAuth 2.0**: Implemented for secure user authentication and authorization.
 - **Redis Caching**: To reduce response times and improve performance.
 - **ElasticSearch**: Used for efficient product searching and filtering.
-- **Kafka**: Enables event-driven communication, particularly for sending notifications.
+- **Kafka**: Enables event-driven communication, particularly for sending notifications via email.
 - **Razorpay**: Integrates with the payment service to handle secure transactions.
 
 Here’s a high-level architecture diagram to visualize how everything fits together:
@@ -51,14 +51,14 @@ To get started with the platform, follow the steps below to set up each service 
      mvn spring-boot:run
      ```
    
-   - Repeat this for each microservice (User, Product, Payment, Notification).
+   - Repeat this for each microservice (User, Product, Payment, Email Notification).
 
 4. **Explore APIs**: Each service exposes a set of REST APIs. You can interact with them directly via Postman or Curl.
 
    - **User Service**: Authentication via OAuth 2.0 (e.g., `POST /login`, `POST /register`)
    - **Product Catalog**: `GET /products` (with filtering options)
    - **Payment Service**: `POST /payments` (to process a payment)
-   - **Notification Service**: Use Kafka to trigger events for email notifications.
+   - **Email Notification Service**: Kafka sends a welcome email after a successful user registration.
 
 ## Testing the Platform
 
@@ -70,7 +70,8 @@ While end-to-end flows aren’t set up for external testing, each service can be
   - Example API: `GET /products?filter=...`
 - **Payment Gateway Service**: Test payment processing.
   - Example API: `POST /payments`
-- **Notification Service**: Trigger email notifications via Kafka events.
+- **Email Notification Service**: Verify that Kafka sends a welcome email after user registration.
+  - Example: Trigger the `POST /register` endpoint to register a user and check email delivery.
 
 For detailed API documentation and usage, check out the individual repositories.
 
@@ -85,6 +86,7 @@ This project is built using the following technologies:
 - **Search**: ElasticSearch
 - **Payments**: Razorpay
 - **Authentication**: OAuth 2.0 for secure user login and authorization
+- **Email Notification**: Kafka for sending automated emails on user registration
 
 ## Future Improvements
 
@@ -98,8 +100,9 @@ Here are a few ideas for future enhancements:
 
 Feel free to reach out if you’d like to discuss this project or have any questions:
 
-- [LinkedIn](https://linkedin.com/in/yourusername)
-- [Email](mailto:email@example.com)
+- [LinkedIn](https://www.linkedin.com/in/sandhya-ragulapadu-040007146/)
+- [Email](ragulapadusandhya7797@gmail.com)
+
 
 
 
