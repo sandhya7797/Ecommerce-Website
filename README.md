@@ -39,16 +39,7 @@ Here’s a high-level architecture diagram to visualize how everything fits toge
 
 ## Testing the Platform
 
-While end-to-end flows aren’t set up for external testing, each service can be tested independently. Here’s how you can test each service:
-
-- **User Service**: Test user registration and login using OAuth 2.0.
-  - Example API: `POST /register` and `POST /login`
-- **Product Catalog Service**: Test product search and filtering.
-  - Example API: `GET /products?filter=...`
-- **Payment Gateway Service**: Test payment processing.
-  - Example API: `POST /payments`
-- **Email Notification Service**: Verify that Kafka sends a welcome email after user registration.
-  - Example: Trigger the `POST /register` endpoint to register a user and check email delivery.
+While end-to-end flows aren’t set up for external testing, each service can be tested independently. Here’s how you can test each service.
 
 For detailed API documentation and usage, check out the individual repositories.
 
