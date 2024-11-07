@@ -47,7 +47,7 @@ For detailed API documentation and usage, check out the individual repositories.
 
 This project is built using the following technologies:
 
-- **Backend**: Spring Boot, Spring Cloud
+- **Backend**: Spring Boot, Spring Security
 - **Database**: MySQL
 - **Caching**: Redis
 - **Messaging**: Kafka
