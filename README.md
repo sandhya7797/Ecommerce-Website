@@ -20,7 +20,7 @@ The project is split into separate repositories for each microservice. You can e
 - [**User Service**](https://github.com/sandhya7797/UserService): Manages user authentication and authorization via OAuth 2.0.
 - [**Product Catalog Service**](https://github.com/sandhya7797/ThirdPartyAPI): Handles product management and search functionality with ElasticSearch integration.
 - [**Payment Gateway Service**](https://github.com/sandhya7797/PaymentApplication): Secure payment processing with Razorpay integration.
-- [**Email Notification Service**](https://github.com/sandhya7797/EmailNotificationService): Sends automated emails using Kafka upon user registration.
+- [**Email Notification Service**](https://github.com/sandhya7797/EmailService2): Sends automated emails using Kafka upon user registration.
 
 ## Technical Architecture
 
