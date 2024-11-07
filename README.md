@@ -1,6 +1,6 @@
 # Ecommerce Website - Microservices Architecture
 
-Welcome to my Ecommerce platform project! This platform is built using a microservices architecture, designed to manage essential ecommerce functionalities such as product browsing, payment handling, user authentication, and notifications. Each service operates independently, which makes the platform scalable, resilient, and easy to maintain.
+Welcome to my Ecommerce project! This platform is built using a microservices architecture, designed to manage essential ecommerce functionalities such as product browsing, payment handling, user authentication, and notifications. Each service operates independently, which makes the platform scalable, resilient, and easy to maintain.
 
 ## Project Overview
 
